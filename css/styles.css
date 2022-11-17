@@ -917,15 +917,18 @@ flex-grow: 1;
         font-size: medium;
         width: 75%;
     }
+    #seccionPedido {
+        height: auto;
+        padding: 1rem 0 1rem 0;
+    }
     #seccionPedido > div{
         display: flex;
         flex-direction: column;
     }
-    .pedidosDelivery{
+    .linksTake{
         display: flex;
-        align-items: center;
-        flex-direction: column;
     }
+    
 } 
 
 
