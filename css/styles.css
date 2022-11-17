@@ -222,7 +222,7 @@ footer{
     align-items: center;
     flex-direction: row;
     justify-content: space-around;
-    background-color: black;
+    background-color:#1D1D1B;
     color: rgba(217, 217, 217, 1);
 }
 
@@ -266,75 +266,6 @@ footer{
 }
 #dondeEstamos{
     margin: 5rem 0 5rem 0;
-}
-
-
-@media screen and (max-width: 480px){
-   
-
-    #infoCompra{
-        display: flex;
-        background-color: #1D1D1B;
-        height: 200px;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    
-    
-    .carousel-control-prev-icon{
-        display: none;
-    }
-    .carousel-control-next-icon{
-        display: none;
-    }
-    
-    button{
-        display: none;
-    }
-    
-    
-    .elegi{
-        margin: 0;
-        position: absolute;
-        height: 140px;
-        left: 20.01px;
-        top: 310px;
-    }
-    .preparamos{
-        background-image: url(/img/\(Mobile\)_2_Preparamos_pedido.svg);
-        
-        position: absolute;
-        width: 600px;
-        height: 140px;
-        left: 19px;
-        top: 470px;
-    }
-    .buscar{
-        position: absolute;
-        height: 141px;
-        left: 34px;
-        top: 629px;
-    }
-
-    #seccionPorque{
-        height: 900px;
-        
-    }
-    .porQue{
-        display: block;
-    }
-
-    .porqueViviVegan{
-        display: block;
-        flex-direction: column;
-        
-        width: 25rem;
-    }
-    .porqueViviVegan > h3{
-        display: flex
-
-    }
 }
 
 
@@ -519,9 +450,8 @@ input::-webkit-input-placeholder {
 }
 
 .title{
-    font-weight: bold;
+    font-weight:600;
     margin-right: 30px;
-    font-family: 'Trueno';
     font-style: normal;
     font-size: 52px;
     
@@ -607,79 +537,52 @@ flex-grow: 1;
     text-align: center;
 }
 
-h5{
-    line-height: 22px;
-    
-}
-
 .filtros{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin: 5rem;
-}
-
-
-
-.filtros > button{
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 2px 12px;
-    gap: 8px;
-    width: 183px;
-    height: 50px;
-    line-height: 24px;
-    border: 2px solid #1D1D1B;
-    border-radius: 12px;
-    background-color: transparent;
-}
-
-
-
-.redes{
-    width: 30px;
-}
-.contenido{
-  display: flex;
-flex-direction: row;
-align-items: flex-start;
-padding: 0px;
-gap: 8px;
-
-position: absolute;
-width: 1029.36px;
-height: 2337px;
-left: 222px;
-top: 402px;
-}
-
-
-.contenedorCards{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-items: center;
-    
-}
-.cardProducto{
-    padding: 0px;
-    gap: 8px;
-    width: 300.45px;
-    margin: 1rem;
-    height: 21rem;
-    
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin: 5rem;
     }
+    
+    
+    
+.filtros > button{
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 2px 12px;
+        gap: 8px;
+        width: 183px;
+        height: 50px;
+        border: 2px solid #1D1D1B;
+        border-radius: 12px;
+        background-color: transparent;
+    }
+    
+.contenedorCards{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+        margin: 1rem 5rem 1rem 5rem;
+}
+
+.cardProducto{
+    margin: 1rem;
+    width: 20rem;
+    height: 20rem;
+}
 
 .cardProducto > img{
-    height: 15rem;
+    width: 20rem;
+    height: 14rem;
     border-radius: 44px 44px 0px 0px;
 }
 .cardProducto > div{
     border-radius: 0px 0px 44px 44px;
-    width: 300.45px;
+    width: 20rem;
     height: 6rem;
     background-color: #1D1D1B;
 }
@@ -699,241 +602,116 @@ top: 402px;
 
 @media screen and (max-width: 480px){
 
-    /*Navbar */
-    .navbar-toggler{
-        display: flex;
-        width: 100%;
-        justify-content: space-between;
-        align-items: center;
-        border: none;
-    }
-    .navbar-toggler:focus{
-        box-shadow: none;
-    }
-    .navbar-toggler-icon{
-        background-image: none;
-    }
-    #navbarNav >ul{
-        align-items: center;
-    }
-    #logo{
-        display: none;
-    }
-
-    /*footer*/
-    footer{
-        height: auto;
-        align-items: center;
-        flex-direction: column;
-        padding: 2rem 0 2rem 0;
-    }
-
-    .imgLogo{
-        height: 4rem;
-    }
-
-    .suscribite > form{
-        flex-direction: column;
-
-    }
-
-    .suscribite > form > input{
-        margin-bottom: 1rem;
-
-    }
-    #btnSuscribite{
-        width: 6rem;
-    }
-
-    .carousel-inner{
-        height: auto;
-    }
-    #infoCompra{
-        overflow: hidden;
-        height: auto;
-        padding: 2rem 0 2rem 0;
-    }
-    #infoCompra >div{
-        flex-direction: column;
-        height: auto;
-        padding: 2rem 0 2rem 0;
+        /*Navbar */
+        .navbar-toggler{
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            align-items: center;
+            border: none;
+        }
+        .navbar-toggler:focus{
+            box-shadow: none;
+        }
+        .navbar-toggler-icon{
+            background-image: none;
+        }
+        #navbarNav >ul{
+            align-items: center;
+        }
+        #logo{
+            display: none;
+        }
     
-    }
-    .elegi, .buscar{
-        margin-left: 1rem;
-        width: 15rem;
+        /*footer*/
+        footer{
+            height: auto;
+            align-items: center;
+            flex-direction: column;
+            padding: 2rem 0 2rem 0;
+        }
     
-    }
-    .preparamos{
-        width: 15rem;
-        margin-left: 14rem;
-    }
+        .imgLogo{
+            height: 4rem;
+        }
+    
+        .suscribite > form{
+            flex-direction: column;
+    
+        }
+    
+        .suscribite > form > input{
+            margin-bottom: 1rem;
+    
+        }
+        #btnSuscribite{
+            width: 6rem;
+        }
+    
+        .carousel-inner{
+            height: auto;
+        }
+        #infoCompra{
+            overflow: hidden;
+            height: auto;
+            padding: 2rem 0 2rem 0;
+        }
+        #infoCompra >div{
+            flex-direction: column;
+            height: auto;
+            padding: 2rem 0 2rem 0;
+        
+        }
+        .elegi, .buscar{
+            margin-left: 1rem;
+            width: 15rem;
+        
+        }
+        .preparamos{
+            width: 15rem;
+            margin-left: 14rem;
+        }
     /* seccion destacados */
     #seccionDestacados{
         height: auto;
-        
+
     }
     #seccionDestacados >h2{
         size: 25px;
-        
+
     }
     .swiper-slide {
         font-size: 12px;
         width: 15rem;
     }
 
-
-}
- 
-
-/* MEDIA QUERIES PRODUCTO */
-@media screen and (max-width:480px){
-    
-    .carousel-inner{
-        width: 100%;
+    /* Cards */
+    .card{
+        height: 20rem;
     }
-    
-    .filtros{
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      margin-right: 1rem;
-      margin-left: 10% ;
-      
+    .swiper-slide > .card{
+        width: 15rem;
+        height: 20rem;
     }
-
-    
-
-    #milanesas{
-        display: none;
+    .swiper-slide > .card > img{
+        width: 15rem;
+        height: 14rem;
+    }
+    .swiper-slide > .card > div{
+        width: 15rem;
+        height: 6rem;;
+    }
+    .swiper-slide > .card > div> h5{
+        font-size: medium;
     }
 
-    #burger{
-        display: none;
+    .swiper-button-next, .swiper-button-prev{
+        width: 40px;
+        height: 40px;
     }
-
-    #parrilla{
-        display: none;
+    .swiper-button-next::after, .swiper-button-prev::after{
+        font-size: medium;
     }
-    
-    #mayos{
-        display: none;
-    }
-
-    #todos{
-        display: none;
-    }
-    
-
-    .contenedorCards{
-      display: grid;
-    grid-template-columns: 1fr 1fr ;
-    align-items: center;
-    margin-left: 0;
-    
-    left: 19px;
-    top: 440px;
-    }
-    .cardProducto{
-      
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      padding: 0px;
-      margin-left: 30px;
-      width: 180px;
-      height: 312px;
-      /* Inside auto layout */
-      flex: none;
-      order: 0;
-      align-self: stretch;
-      flex-grow: 1;
-    
-    }
-
-    .cardProducto > img{
-      width: 180px;
-      height: 153px;
-      
-  /* Inside auto layout */
-  
-    flex: none;
-    order: 0;
-    align-self: stretch;
-    flex-grow: 1;
-    }
-    .cardProducto > div{
-    border-radius: 0px 0px 44px 44px;
-    width: 200.45px;
-    height: 106px;
-    background-color: #1D1D1B;
-    }   
-
-    .cardCategoria{
-    color: white;
-    }
-    .cardNombre{
-    color: rgba(246, 160, 42, 1);
-    text-align: center;
-    }
-    #product{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 10px 30px;
-    gap: 10px;
-    width: 180px;
-    height: 90px;
-    }
-
-    #product h5{
-    width: 99px;
-    font-family: 'Trueno';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    font-weight: 600;
-    font: Inter;
-    display: flex;
-    line-height: 14px;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    
-  
-/* Inside auto layout */
-  
-    flex: none;
-    order: 0;
-    flex-grow: 1;
-
-/* Negro nuevo */
-
-    background: #1D1D1B;
-    border-radius: 0px 0px 24px 24px;
-
-/* Inside auto layout */
-
-    flex: none;
-    order: 1;
-    align-self: stretch;
-    flex-grow: 0;
-    }
-
-    .titulo-productos{
-    text-align: center;
-    margin-top: 20px;
-      
-    }
-}
-
-
-
-/* MEDIA QUERIES INDEX */
-@media screen and (max-width:480px){
-    
-  
-  
 
     /* seccion porque */
 
@@ -977,6 +755,55 @@ top: 402px;
         width: auto;
     } 
 }
+ 
+
+/* MEDIA QUERIES PRODUCTO */
+@media screen and (max-width:480px){
+    
+    .filtros{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      justify-items: center;
+      margin: 0;
+      
+    }
+    .filtros > button{
+        margin:0.5rem;
+    }
+    
+
+    .contenedorCards{
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        align-items: center;
+        margin: 0;
+        
+    }
+    .cardProducto{
+      
+      width: 13rem;
+      height: 18rem;
+    
+    }
+
+    .cardProducto > img{
+      width: 13rem;
+      height: 12rem;
+    }
+    .cardProducto > div{
+        width: 13rem;
+        height: 6rem;
+        overflow: hidden;
+    }   
+    .cardProducto > div>h5{
+        font-size: small;
+    }   
+
+}
+
+
+
+
 
 /* MEDIA QUERIES CONTACTO */
 @media screen and(max-width:480px){
@@ -984,10 +811,15 @@ top: 402px;
 
 
 .content-acordeon{
-       margin-top: 35px;
-  margin-right: 50px;
+    margin-top: 35px;
+    margin-right: 50px;
 }
 
+.title{
+    font-size: 40px;
+    margin: 0;
+    
+}
 
 .question-answer{
   width: 100%;
@@ -998,29 +830,7 @@ top: 402px;
   justify-content: left;
 }
 
-.title.question{
-  margin: 1.4rem 0rem;
-  font-size: 1.2rem;
-  font-weight: 200;
-  color: #1D1D1B;
 
-}
-
-.fas{
-  color: #E83F40;
-}
-
-.question-btn{
-  font-size: 1.5rem;
-  background: transparent;
-  border-color: transparent;
-  cursor: pointer;
-  display: flex;
-}
-
-.up-icon{
-  display: none;
-}
 
 .answer{
   font-size: 1.2rem;
@@ -1029,18 +839,6 @@ top: 402px;
 }
 
 
-.show-text .answer{
-  display: block;
-  transition: 12;
-}
-
-.show-text .up-icon{
-  display: inline;
-}
-
-.show-text .down-icon{
-  display: none;
-}
 p{
   height: 150px;
   width: 100%;
@@ -1055,166 +853,69 @@ p{
 @media screen and (max-width:480px) {
   
   #comoComprar{
-    height: 1480px;
-  }
-
-  #textoPasoUno{
-    position: absolute;
-    width: 296px;
-    height: 50.5px;
-    left: 70px;
-    top: 392px;
-    font-family: 'Trueno';
-    font-style: normal;
-    font-weight: 900;
-    font-size: 20px;
-    line-height: 24px;
-    align-items: center;
-
-/* Negro nuevo */
-
-color: #1D1D1B;
-  }
-    .uno{
+    height: auto;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
     align-items: center;
-    padding: 12px;
-    gap: 8px;
+  }
+  .pasos{
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 0;
+  }
 
-    position: absolute;
-    width: 36px;
-    height: 35px;
-    left: 19px;
-    top: 317px;
-
-/* Rosa */
-
-    background: #F20587;
-    border-radius: 56px;
+    .pasos > div> img{
+        width: 20rem;
+        
     }
 
     .paso{
-    width: 45px;
-    height: 45px;
-    margin-left: 28px;
-    top: 390px;
-    font-family: 'Trueno';
-    font-style: normal;
-    font-weight: 900;
-    font-size: 25px;
-    line-height: 40px;
-/* identical to box height */
+        width: 4rem;
+        height: 4rem;
+        font-size: 2.5rem;
 
-    text-align: center;
+    }
 
-/* Celeste */
-
-    color: #80CFF5;
-
-
-/* Inside auto layout */
-
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-
-  }
-
-  .rounded-4{
-    box-sizing: border-box;
-    width: 335.83px;
-    left: 20.17px;
-    margin-top: 30px;
-  }
-
-  .dos{
+    .uno{
+        top:auto;
+        margin-left: -4.5rem;
+        position: relative;
+    }
+    #textoPasoUno{
+        position: relative;
+        top: 3.5rem;
+        font-size: medium;
+        width: 75%;
+    }
+#pasoDos{
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    padding: 12px;
-    gap: 8px;
-    position: absolute;
-    width: 46px;
-    height: 45px;
-    left: 19px;
-    top: 830px;
-    /* Verde */
-    background: #BCCF00;
-    color: #F20587;
-    border-radius: 56px;
-  }
-  #textoPasoDos{
-    position: absolute;
-    width: 296px;
-    height: 40px;
-    left: 100px;
-    top: 825px;
+    width: 20rem;
+    
+}
+.dos{
+    margin-left: -4.5rem;
+    top: auto;
+}
+#textoPasoDos{
+    position: relative;
+    top: 3.5rem;
+    font-size: medium;
+    width: 75%;
+}
+.tres{
+    top:auto;
+    margin-left: -4.5rem;
+    position: relative;
+}
+#textoPasoTres{
+    position: relative;
+    top: 3.5rem;
+    font-size: medium;
+    width: 75%;
+}
 
-    font-family: 'Trueno';
-    font-style: normal;
-    font-weight: 900;
-    font-size: 20px;
-    line-height: 24px;
-    display: flex;
-    align-items: center;
-
-/* Negro nuevo */
-
-    color: #1D1D1B;
-  }
-
-  #imgPasoDos{
-    position: absolute;
-    height: 335.83px;
-    left: 35px;
-    margin-top: -2%;
-  }
-
-  .tres{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 12px;
-    gap: 8px;
-    position: absolute;
-    width: 46px;
-    height: 45px;
-    left: 19px;
-    top: 1350px;
-
-/* Celeste */
-    color: #BCCF00;
-    background: #80CFF5;
-    border-radius: 56px;
-  }
-  
-  #textoPasoTres{
-    position: absolute;
-    width: 296px;
-    height: 60px;
-    left: 70px;
-    top: 1350px;
-    font-family: 'Trueno';
-    font-style: normal;
-    font-weight: 900;
-    font-size: 20px;
-    line-height: 24px;
-
-/* Negro nuevo */
-
-color: #1D1D1B;
-  }
-  #imgPasoTres{
-    position: absolute;
-    height: 335.83px;
-    left: 35px;
-    top: 1400px;
-    margin-top: 2%;
-  }
 } 
 
 
@@ -1222,96 +923,39 @@ color: #1D1D1B;
 
 @media screen and (max-width:480px) {
   #somos{
-    height: 1050px;
+    height: auto;
   }
 
-  .imgQuienesSomos >img {
-    position: absolute;
-    width: 450px;
-    height: 320px;
-    left: 17.24px;
-    top: 400px;
-    background: #D9D9D9;
-    border-radius: 24px;
+  #quienesSomos{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0 1rem 0;
+    align-items: center;
+
+    }
+#quienesSomos > div > img{
+    width: 22rem;
+    height: 22rem;
 }
 
-  #quienes-Somos{
-    position: absolute;
-    width: 336px;
-    height: 39.66px;
-    left: 20px;
-    top: 730px;
-    font-family: 'Trueno';
-    font-style: normal;
-    font-weight: 900;
-    font-size: 20px;
-    line-height: 24px;
-
-/* Negro nuevo */
-
-color: #1D1D1B;
-
+#quienesSomos > div > h1{
+    text-align: center;
+    margin-top: 1rem;
 }
-  .textoQuienes{
-    position: absolute;
-    width: 450px;
-    height: 160px;
-    left: -20px;
-    top: 750px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 13px;
-    line-height: 16px;
-    color: #575757;
-  }
   
-  #dondeTexto{
-    position: absolute;
-    width: 334.97px;
-    height: 30.07px;
-    left: 20.75px;
-    top: 900px;
-    font-family: 'Trueno';
-    font-style: normal;
-    font-weight: 900;
-    font-size: 20px;
-    line-height: 24px;
+#dondeEstamos{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.mapa{
+    width: 22rem;
+    height: 22rem;
 
-/* Negro nuevo */
-
-    color: #1D1D1B;
-
-  }
-
-  .textoDonde{
-    position: absolute;
-    width: 450px;
-    height: 160px;
-    left: -20px;
-    top: 920px;
-    font-family: 'Trueno';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 13px;
-    line-height: 114.9%;
-/* or 15px */
-
-
-/* Negro nuevo */
-
-    color: #1D1D1B;
-
-  }
-
-  .mapa{
-    position: absolute;
-    width: 450px;
-    height: 320px;
-    left: 17.24px;
-    top: 980px;
-    background: #D9D9D9;
-    border-radius: 24px;
-
-  }
+}
+.mapa > iframe{
+    width: 20rem;
+    height: 20rem;
+    align-items: center;
+}
 }
