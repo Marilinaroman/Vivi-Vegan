@@ -254,7 +254,7 @@ footer{
 #quienesSomos{
     display: grid;
     margin: 5rem 0 5rem 0;
-    grid-template-columns: 6fr 2fr;
+    grid-template-columns: 5fr 4fr;
     align-items: center;
     
 }
@@ -453,7 +453,7 @@ input::-webkit-input-placeholder {
     font-weight:600;
     margin-right: 30px;
     font-style: normal;
-    font-size: 52px;
+    font-size: 2rem;
     
 } 
 
@@ -664,12 +664,13 @@ flex-grow: 1;
         }
         .elegi, .buscar{
             margin-left: 1rem;
-            width: 15rem;
+            margin-bottom: 1rem;
+            width: 14rem;
         
         }
         .preparamos{
-            width: 15rem;
-            margin-left: 14rem;
+            width: 14rem;
+            margin-left: 8rem;
         }
     /* seccion destacados */
     #seccionDestacados{
@@ -760,44 +761,49 @@ flex-grow: 1;
 /* MEDIA QUERIES PRODUCTO */
 @media screen and (max-width:480px){
     
-    .filtros{
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      justify-items: center;
-      margin: 0;
-      
-    }
-    .filtros > button{
-        margin:0.5rem;
-    }
-    
-
-    .contenedorCards{
+        #categorias{
+            overflow: hidden;
+            width: 100%;
+        }
+        .filtros{
         display: grid;
-        grid-template-columns: 1fr 1fr ;
-        align-items: center;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
         margin: 0;
         
-    }
-    .cardProducto{
-      
-      width: 13rem;
-      height: 18rem;
-    
-    }
+        }
+        .filtros > button{
+            margin:0.5rem;
+            width: 8rem;
+            height: 45px;
+        }
+        
 
-    .cardProducto > img{
-      width: 13rem;
-      height: 12rem;
-    }
-    .cardProducto > div{
+        .contenedorCards{
+            display: grid;
+            grid-template-columns: 1fr 1fr ;
+            align-items: center;
+            margin: 0;
+            
+        }
+        .cardProducto{
         width: 13rem;
-        height: 6rem;
-        overflow: hidden;
-    }   
-    .cardProducto > div>h5{
-        font-size: small;
-    }   
+        height: 18rem;
+        
+        }
+
+        .cardProducto > img{
+        width: 13rem;
+        height: 12rem;
+        }
+        .cardProducto > div{
+            width: 13rem;
+            height: 6rem;
+            overflow: hidden;
+        }   
+        .cardProducto > div>h5{
+            font-size: small;
+        }   
 
 }
 
@@ -807,62 +813,58 @@ flex-grow: 1;
 
 /* MEDIA QUERIES CONTACTO */
 @media screen and(max-width:480px){
-  
 
+    .content-acordeon{
+        margin-top: 35px;
+        margin-right: 50px;
+    }
 
-.content-acordeon{
-    margin-top: 35px;
-    margin-right: 50px;
-}
+    .title{
+        font-size: 40px;
+        margin: 0;
+        
+    }
 
-.title{
-    font-size: 40px;
-    margin: 0;
+    .question-answer{
+    width: 100%;
     
-}
-
-.question-answer{
-  width: 100%;
-  
-}
-.question{
-  display: flex;
-  justify-content: left;
-}
+    }
+    .question{
+    display: flex;
+    justify-content: left;
+    }
 
 
 
-.answer{
-  font-size: 1.2rem;
-  line-height: 1.8;
-  display: none;
-}
+    .answer{
+    font-size: 1.2rem;
+    line-height: 1.8;
+    display: none;
+    }
 
 
-p{
-  height: 150px;
-  width: 100%;
-  line-height: 10rem;
-  } 
- 
-  
+    p{
+    height: 150px;
+    width: 100%;
+    line-height: 10rem;
+    } 
 } 
 
 /* MEDIA QUERIES COMO COMPRAR */
 
 @media screen and (max-width:480px) {
-  
-  #comoComprar{
-    height: auto;
-    display: flex;
-    align-items: center;
-  }
-  .pasos{
-    width: 100%;
-    display: flex;
-    flex-direction: column-reverse;
-    margin: 0;
-  }
+
+    #comoComprar{
+        height: auto;
+        display: flex;
+        align-items: center;
+    }
+    .pasos{
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 0 1rem 0 1rem;
+    }
 
     .pasos > div> img{
         width: 20rem;
@@ -870,15 +872,15 @@ p{
     }
 
     .paso{
-        width: 4rem;
-        height: 4rem;
-        font-size: 2.5rem;
+        width: 3.5rem;
+        height: 3.5rem;
+        font-size: 1.5rem;
 
     }
 
     .uno{
         top:auto;
-        margin-left: -4.5rem;
+        margin-left: -4rem;
         position: relative;
     }
     #textoPasoUno{
@@ -887,75 +889,83 @@ p{
         font-size: medium;
         width: 75%;
     }
-#pasoDos{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 20rem;
-    
-}
-.dos{
-    margin-left: -4.5rem;
-    top: auto;
-}
-#textoPasoDos{
-    position: relative;
-    top: 3.5rem;
-    font-size: medium;
-    width: 75%;
-}
-.tres{
-    top:auto;
-    margin-left: -4.5rem;
-    position: relative;
-}
-#textoPasoTres{
-    position: relative;
-    top: 3.5rem;
-    font-size: medium;
-    width: 75%;
-}
-
+    #pasoDos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 20rem;
+        
+    }
+    .dos{
+        margin-left: -4rem;
+        top: auto;
+    }
+    #textoPasoDos{
+        position: relative;
+        top: 3.5rem;
+        font-size: medium;
+        width: 75%;
+    }
+    .tres{
+        top:auto;
+        margin-left: -4rem;
+        position: relative;
+    }
+    #textoPasoTres{
+        position: relative;
+        top: 3.5rem;
+        font-size: medium;
+        width: 75%;
+    }
+    #seccionPedido > div{
+        display: flex;
+        flex-direction: column;
+    }
+    .pedidosDelivery{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
 } 
 
 
 /* MEDIA QUERIES SOBRE NOSOTROS */
 
 @media screen and (max-width:480px) {
-  #somos{
-    height: auto;
-  }
+    #somos{
+        height: auto;
+    }
 
-  #quienesSomos{
-    display: flex;
-    flex-direction: column;
-    margin: 1rem 0 1rem 0;
-    align-items: center;
+    #quienesSomos{
+        display: flex;
+        flex-direction: column;
+        margin: 1rem 0 1rem 0;
+        align-items: center;
+
+        }
+    #quienesSomos > div > img{
+        width: 22rem;
+        height: 22rem;
+    }
+
+    #quienesSomos > div > h1{
+        text-align: center;
+        margin-top: 1rem;
+    }
+    
+    #dondeEstamos{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .mapa{
+        width: 22rem;
+        height: 22rem;
 
     }
-#quienesSomos > div > img{
-    width: 22rem;
-    height: 22rem;
-}
-
-#quienesSomos > div > h1{
-    text-align: center;
-    margin-top: 1rem;
-}
-  
-#dondeEstamos{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-.mapa{
-    width: 22rem;
-    height: 22rem;
-
-}
-.mapa > iframe{
-    width: 20rem;
-    height: 20rem;
-    align-items: center;
-}
+    .mapa > iframe{
+        width: 20rem;
+        height: 20rem;
+        align-items: center;
+    }
 }

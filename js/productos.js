@@ -72,7 +72,6 @@ const filtrar = (e) =>{
             item.classList.remove('d-none')
         }
     }
-    console.log(filtro);
 } 
 
 const borrarFiltro = ()=>{
@@ -85,7 +84,6 @@ const borrarFiltro = ()=>{
 
 setTimeout(()=>{
     crearCards()
-    console.log(contenedorCards);
 },2500)
 
 
