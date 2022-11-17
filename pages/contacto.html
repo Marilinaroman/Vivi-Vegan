@@ -72,17 +72,17 @@
         <form id="form" method="post" class="form">
             <div class="inputs">
                 <div class="col nombre">
-                    <input type="text" id="nombre" class="form-control nombre"  placeholder="Nombre" >
+                    <input type="text" id="nombre" class="form-control nombre"  placeholder="Nombre" required >
                 </div>
                 <div class="col telefono">
-                    <input type="text" id="telefono"  class="form-control" placeholder="Telefono" >
+                    <input type="number" id="telefono"  class="form-control" placeholder="Telefono" required >
                 </div>
             </div>
             <div class="col">
-                <input type="text" id="email" required class="form-control" placeholder="Email">
+                <input type="email" id="email" required class="form-control" placeholder="Email" required>
             </div>
             <div class="col">
-                <textarea placeholder="Mensaje" class="form-control" id="mensaje" rows="10"></textarea>
+                <textarea placeholder="Mensaje" class="form-control" id="mensaje" rows="10" required></textarea>
             </div>
             <input type="submit" id="enviarMail" class="btn email" value="Enviar" required>
         </form>
@@ -237,7 +237,7 @@
         <div class="suscribite">
             <h5 class="text-uppercase">suscribite a nuestro newletter!</h5>
             <form class="d-flex align-items-center" id="suscribite">
-                <input id="emailSuscripcion" type="email" placeholder="correo electrónico">
+                <input id="emailSuscripcion" type="email" placeholder="correo electrónico" required>
                 <input type="submit" id="btnSuscribite" value="Enviar">
             </form>
         </div>
@@ -253,7 +253,6 @@
         
         <script src="../js/preguntasFrecuentes.js"></script>
         <script src="../js/enviarWsp.js"></script>
-        <script src="../js/validacion.js"></script>
         <script src="../js/contacto.js"></script>
         <script src="../js/suscribite.js"></script>
     </body>
